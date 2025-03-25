@@ -75,7 +75,9 @@ public static void Punctuation()
 `punctuation`is a string Array used to tell the program which strings should be treated as punctuation, this is because punctuation is treated differently than other strings, as they are important to predicting sentences and not adding to sentence length since they aren't words. The user must put the punctuation used to end sentences before punctuation used to pause sentences, and then mark the index where the sentence pausers start from, this is so the program knows that these punctuation marks don't end a sentence.
 
 **`static boolean labelMatrixIndices`** - For the print matrix command, if set to true, it will display the row and column numbers on the matrix, starting from zero, this is useful if the matrix is extremely large and it is difficult to keep count of the columns. To see what words and states these indices are associated with, use `8` to print the binding table, telling the user which index is associated with which words/states.
+
 **`static DecimalFormat decimalFormat`** - a variable used to determine the amount of precision the user wants in their outputs for stationary distributions and matrices.
+
 **`static int totalSpaces`** - a variable associated with decimalformat used to set spacing when the `labelMatrixIndices` option is set to true, it is meant to center the index description within the amount of spaces allocated. It is recommended that this is equal to the size of the string used for the `Decimalformat` object's instantiation plus 1.
 
 **`static String toAnalyze`** - variable used to set the file the data is being read from, make sure that this file is in the same directory as all the other java files for this program.
