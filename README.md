@@ -22,7 +22,39 @@ Two important parts local to the `MarkovChain.java` file itself are the checks f
 **State removal** - A way to analyze the Markov chain's behavior if certain states are turned transient. This can be important in analyzing how the Markov chain's stationary distribution changes if certain states are turned transient. The method of turning states transient in this program are simply by removing ingress states but maintaining egress states, meaning that state will only ever be exited, and in the stationary distribution this will be seen as a `0%` probability of being in this state.
 
 # SentenceAnalyzer.java
-A class used to perform analysis on the Markov chain 
+A class used to perform analysis on the Markov chain. It predicts the next word, next N words, or tries to complete a sentence. The program uses a modified version of Dijkstra's shortest weighted path algorithm on a probability graph. Since the probabiltiies must be multiplied against each other whenever a new edge is traversed, we use `Log(probabilityA * probabilityB) = Log(probabilityA) + Log(probabilityB)` as this is a more numerically stable way. This results in negative Dijkstra's since probabilities are all less than 1, however, since we are maximizing positive values, there is no issue that comes from this.
+
+# Main.java
+A class used to combine everything together. It will read the file containing the sentences, build the frequency matrix and have it converted into a Markov chain, it handles all the file writing and user input/output. There is a basic CLI implemented with the following options:
+```
+0 : quit
+1 : predict next word
+2 : predict next N words
+3 : sentence autocomplete
+4 : write stationary distribution
+5 : enter temp matrix menu
+6 : write matrix
+7 : check reducability and periodicity of chain
+8 : print binding table
+```
+As seen with the options above, there is temporary matrix menu option, which has the following options:
+```
+0 : return to Main menu
+1 : predict next word
+2 : predict next N words
+3 : sentence autocomplete
+4 : obtain stationary distribution
+5 : print matrix
+6 : check reducability and periodicity of chain
+7 : smooth matrix
+8 : remove states
+9 : print index to word binding table
+```
+All of these options interact with the `MarkovChain.java` or `SentenceAnalyzer.java` in a way that prevents the program from crashing. There are also some user changable attributes in this file, which will be listed below.
+
+**`static boolean labelMatrixIndices`** -
+
+
 
 
 
