@@ -17,7 +17,7 @@ A class used for the MarkovChain object, it heavily relies upon `Matrix.java` to
 
 Two important parts local to the `MarkovChain.java` file itself are the checks for irreducibility and the state removing method.
 
-**Irreducibility** - Irreducibility is an analog to strongly connected components on a graph, or a way of describing reachability from a node to any other node. If a node `A` can reach a node `B`, and a node `B` can reach a node `A`, `A` and `B` are in the same strongly connected component, or the same communication class in Markov chain terminology. An irreducible Markov chain is one where every single state is in the same communication class. Tarjan's SCC algorithm is how these strongly connected components are determined.
+**Irreducibility** - Irreducibility is an analog to strongly connected components on a graph, or a way of describing reachability from a node to any other node. If node `A` can reach  node `B`, and node `B` can reach node `A`, `A` and `B` are in the same strongly connected component, or the same communication class in Markov chain terminology. An irreducible Markov chain is one where every single state is in the same communication class. Tarjan's SCC algorithm is how these strongly connected components are determined.
 
 **State removal** - A way to analyze the Markov chain's behavior if certain states are turned transient. This can be important in analyzing how the Markov chain's stationary distribution changes if certain states are turned transient. The method of turning states transient in this program are simply by removing ingress states but maintaining egress states, meaning that state will only ever be exited, and in the stationary distribution this will be seen as a `0%` probability of being in this state.
 
