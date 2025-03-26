@@ -1,7 +1,7 @@
 # Sentence-Predictor
 Basic word and sentence prediction program designed to read off a text file the user specifies and performs some basic analysis on it. The main focus of this project is to analyze this information in the context of Markov chains. Matrices in this program are treated as arraylists of arraylists with doubles as their elements. The following descriptions will contain summaries of the 4 most important files and their purposes.
 
-# Very basic information
+# Important Starting Information
 
 If you want to get started immediately, put whatever text you want in the `randtext.txt` file. The code by default works with `, ! ? .` as punctuation as well with any words.
 
