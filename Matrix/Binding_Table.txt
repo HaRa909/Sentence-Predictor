@@ -1,0 +1,44 @@
+Matrix index to word bindings :
+
+
+(0): .
+(1): !
+(2): ?
+(3): ,
+(4): hello
+(5): there
+(6): this
+(7): is
+(8): a
+(9): basic
+(10): sample
+(11): sentence
+(12): are
+(13): we
+(14): using
+(15): the
+(16): four
+(17): different
+(18): punctuation
+(19): marks
+(20): that
+(21): for
+(22): you
+(23): to
+(24): decide
+(25): right
+(26): should
+(27): hopefully
+(28): have
+(29): stationary
+(30): distribution
+(31): if
+(32): everything
+(33): went
+(34): way
+(35): it
+(36): was
+(37): supposed
+(38): extra
+(39): text
+(40): now
