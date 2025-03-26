@@ -77,7 +77,7 @@ public class Main
 
     /**
      * Hashmap instantiated with whatever
-     * punctuation is desired and their bindings
+     * punctuation is desired and their bindings.
      * This program is coded for four of these
      * split the punctuation array into a section
      * of sentence enders and sentence pausers
@@ -181,7 +181,7 @@ public class Main
     
     /**
      * This is the menu for the temporary matrix option.
-     * It creates a duplicate Markov chian the user can do whatever
+     * It creates a duplicate Markov chain the user can do whatever
      * they want with without messing up the original data.
      */
     public static void tempMatrixMenu()
