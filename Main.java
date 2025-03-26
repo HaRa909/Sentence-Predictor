@@ -76,13 +76,12 @@ public class Main
 
 
     /**
-     * Hashmap instantiated with whatever
-     * punctuation is desired and their bindings.
-     * This program is coded for four of these
-     * split the punctuation array into a section
-     * of sentence enders and sentence pausers
-     * label the first sentencepauser index via
-     * sentencePauseIndex variable
+     * Hashmap instantiated with whatever punctuation is desired and their bindings. 
+     * 
+     * This program is coded  for four of these split the punctuation array into a 
+     * section of sentence enders and  sentence pausers. 
+     * 
+     * Label the first sentencepauser index via sentencePauseIndex variable.
      */
     public static void Punctuation()
     {
